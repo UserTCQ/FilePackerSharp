@@ -10,7 +10,9 @@ namespace FilePackerSharp
         private FileStream[] _inputs;
         private FileStream _output;
 
-        /// <summary>Get all files as array of FileStream for reading in top directory</summary>
+        /// <summary>
+        /// Get all files as array of FileStream for reading in top directory
+        /// </summary>
         public static FileStream[] GetFileStreams(string _directory)
         {
             string[] _filePaths = Directory.GetFiles(_directory, "*.*", SearchOption.TopDirectoryOnly);
