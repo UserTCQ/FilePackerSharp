@@ -9,7 +9,7 @@ using FilePackerSharp;
 
 using (Packer _packer = new Packer()) 
 {
-  FileStream[] files = Packer.GetFileStreams("/path/to/files"); //get all filestreams for all files
+  FileStream[] files = Packer.GetFileStreams("/path/to/files"); //get all filestreams for all files in directory
   _packer.PackFiles(files, File.Open("/path/to/new_file.dat", FileMode.Create)); //pack into one file
 }
 ```
